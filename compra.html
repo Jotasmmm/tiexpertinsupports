@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+	<script src="js/js de filtrado/jquery-3.2.1.js"></script>
+	<script src="js/js de filtrado/script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="stylesheet" href="css/css de filtado/estilos.css">
+	
+
+    <title>Productos</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<h1>Escoge un producto</h1>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">Todo</a>
+				<a href="#" class="category_item" category="windows">Windows</a>
+				<a href="#" class="category_item" category="antivirus">Antivirus</a>
+				<a href="#" class="category_item" category="pcInterno">PC Interno</a>
+				<a href="#" class="category_item" category="pcExterno">PC Externo</a>
+				<a href="#" class="category_item" category="pcArmado">PC Armado</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="windows">
+					<img src="img/win.jpg" alt="" >
+					<a href="#">Windows 10</a>
+				</div>
+				<div class="product-item" category="windows">
+					<img src="img/office.jpg" alt="" >
+					<a href="#">Office 365</a>
+				</div>
+				<div class="product-item" category="antivirus">
+					<img src="img/antivirus.png" alt="" >
+					<a href="#">ESET NOD32</a>
+				</div>
+				<div class="product-item" category="antivirus">
+					<img src="img/norton.jpg" height="200" alt="" >
+					<a href="#">Norton Plus</a>
+				</div>
+				<div class="product-item" category="pcInterno">
+					<img src="img/sdd.jpg" alt="" >
+					<a href="#">SSD 500GB KINGSTON</a>
+				</div>
+				<div class="product-item" category="pcInterno">
+					<img src="img/placa.jpg" alt="" >
+					<a href="#">Placa Madre Asus</a>
+				</div>
+				<div class="product-item" category="pcInterno">
+					<img src="img/memoria.jpg" alt="" >
+					<a href="#">Memoria Ram 8GB</a>
+				</div>
+				<div class="product-item" category="pcExterno">
+					<img src="img/impresora.jpg" height="200" alt="" >
+					<a href="#">Impresora HP</a>
+				</div>
+				<div class="product-item" category="pcExterno">
+					<img src="img/ventilador.jpg" alt="" >
+					<a href="#">Ventilador COOL</a>
+				</div>
+				<div class="product-item" category="pcExterno">
+					<img src="img/mouse.jpg" alt="" >
+					<a href="#">Mouse Genius</a>
+				</div>
+				<div class="product-item" category="pcArmado">
+					<img src="img/acer.jpg" height="200" alt="" >
+					<a href="#">Laptop Acer</a>
+				</div>
+				<div class="product-item" category="pcArmado">
+					<img src="img/advance.jpg" height="200" alt="" >
+					<a href="#">Laptop Advance</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="index.html">TI EXPERTS IN SUPPORTS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Articulo</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Compra diversos softwares y hardwares que ofrecemos para ti</p>
+        </div>
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">WINDOWS 10 PRO</h4>
+                    </div>
+                    <div class="card-body" category="windowns">
+                        <img src="img/win.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">119</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>LICENCIA ORIGINAL</li>
+                            <li>INSTALACION RAPIDA</li>
+                            <li>ASESORIA GRATUITA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MOUSE GENIUS </h4>
+                    </div>
+                    <div class="card-body" category="pcExterno">
+                        <img src="img/mouse.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">69</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>INALAMBRICO</li>
+                            <li>COLOR ROJO/NEGRO</li>
+                            <li>BATERIA DE 10 HORAS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ANTIVIRUS ESET NOD32</h4>
+                    </div>
+                    <div class="card-body" category="antivirus">
+                        <img src="img/antivirus.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">299</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>ANTIMALWARE</li>
+                            <li>SEGURIDAD TOTAL</li>
+                            <li>ASESORIA GRATUITA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">COMPRAR</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MEMORIA RAM 8GB</h4>
+                    </div>
+                    <div class="card-body" category="pcInterno">
+                        <img src="img/memoria.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">119</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>ALMACENAMIENTO DE 8GB DE RAM</li>
+                            <li>MARCA VFX</li>
+                            <li>CONEXION CACHE</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MICROSOFT OFFICE 365</h4>
+                    </div>
+                    <div class="card-body" category="windowns">
+                        <img src="img/office.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">399</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>INCLUYE: WORD, POWERPOINT Y EXCEL</li>
+                            <li>ALMACENAMIENTO EN NUBE DE 1TB</li>
+                            <li>ASESORIA GRATUITA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">SDD 500GB</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/sdd.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">349</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MARCA KINGSTON</li>
+                            <li>VELOCIDAD DE 500GB</li>
+                            <li>ALTA VELOCIDAD DE TRANSICION</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">COMPRAR</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PLACA MADRE</h4>
+                    </div>
+                    <div class="card-body" category="pcInterno">
+                        <img src="img/placa.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">1199</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MARCA ASUS</li>
+                            <li>4 PUERTOS USB</li>
+                            <li>SOPORTE DE HASTA 32 GB RAM</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">IMPRESORA HP</h4>
+                    </div>
+                    <div class="card-body" category="productosExtra">
+                        <img src="img/impresora.jpg" class="card-img-top" height="308">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">869</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MULTIFUNCIONAL</li>
+                            <li>TINTA NEGRA Y MULTICOLOR</li>
+                            <li>CONEXION BLUETOOH</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">COMPRAR</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header" category="productosExtra">
+                        <h4 class="my-0 font-weight-bold">VENTILADOR DEEP COLD</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/ventilador.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">99</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>MARCA DEEP COLD</li>
+                            <li>TAMAÑO 200 X 300 MM</li>
+                            <li>ASPAS SILENCIOSAS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">COMPRAR</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <script src="js/filtro de compra.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_upwSn9zgeeJinIZd0uMfr");
+})();
+</script>
+    
+
+</body>
+
+</html>

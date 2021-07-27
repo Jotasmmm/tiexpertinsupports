@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css">
+
+<style>
+
+body{
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);  
+}
+
+.cabeza{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cabezas{
+    background-color: #000000;
+}
+
+table th {
+background-color: #FC5C7D;
+color: white;   
+}
+</style>
+
+</head>
+<body>
+
+    <table >
+        <thead>
+            <tr>
+                <th class="cabeza">Nuestras Areas</th>
+                <th class="cabezas">EXPERTO EN PRODUCTOS APPLE</th>
+                <th class="cabezas">LIMPIEZA DE VIRUS INFORMATICOS</th>
+                <th class="cabezas">MANTENIMIENTO PREVENTIVO Y CORRECTIVO</th>
+                <th class="cabezas">REDES Y SERVIDORES</th>
+                <th class="cabezas">REPARACION DE PERIFERICOS</th>
+                <th class="cabezas">SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</th>
+            </tr>
+        </thead>
+    </table>
+
+    <br>
+
+ <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Nombre</th>                        
+                        <th>Distrito</th>
+                        <th>Fecha de inicio</th>
+                        <th>Trabajos exitosos</th>
+                        <th>Estrellas</th>                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Atilio Nico Valles Martinez</td>
+                        <td>Ancon</td>
+                        <td>2011/04/25</td>
+                        <td>61</td>                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Adrian Cruz Baquero Roma</td>
+                        <td>Ancon</td>
+                        <td>2011/07/25</td>
+                        <td>63</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Maristela Anton Aramburu</td>
+                        <td>Ancon</td>
+                        <td>2009/01/12</td>
+                        <td>66</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Leoncio Angulo Quero</td>
+                        <td>Ate Vitarte</td>
+                        <td>2012/03/29</td>
+                        <td>22</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Gala Garriga Cobo</td>
+                        <td>Ate Vitarte</td>
+                        <td>2008/11/28</td>
+                        <td>33</td>                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Blanca Cantero Calderón</td>
+                        <td>Ate Vitarte</td>
+                        <td>2012/12/02</td>
+                        <td>61</td>                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Ovidio Cabo Esteban</td>
+                        <td>Ate Vitarte</td>
+                        <td>2012/08/06</td>
+                        <td>59</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Fermin Bernardo Acuña Royo</td>
+                        <td>Ate Vitarte</td>
+                        <td>2010/10/14</td>
+                        <td>55</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Hilda Blazquez Salvador</td>
+                        <td>Barranco</td>
+                        <td>2009/09/15</td>
+                        <td>39</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Zaira Calvet Iñiguez</td>
+                        <td>Barranco</td>
+                        <td>2008/12/13</td>
+                        <td>23</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Gonzalo Quintero Asensio</td>
+                        <td>Barranco</td>
+                        <td>2008/12/19</td>
+                        <td>30</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Ruben Vargas Campos</td>
+                        <td>Breña</td>
+                        <td>2013/03/03</td>
+                        <td>22</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Rufino Ureña Gil</td>
+                        <td>Breña</td>
+                        <td>2008/10/16</td>
+                        <td>36</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Xavier Olmedo Viana</td>
+                        <td>Carabayllo</td>
+                        <td>2012/12/18</td>
+                        <td>43</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Carmen Cadenas Campillo</td>
+                        <td>Carabayllo</td>
+                        <td>2010/03/17</td>
+                        <td>19</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Juanito Talavera Vargas</td>
+                        <td>Chaclacayo</td>
+                        <td>2012/11/27</td>
+                        <td>66</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Luciana Peralta Cerda</td>
+                        <td>Chorrillos</td>
+                        <td>2010/06/09</td>
+                        <td>64</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Celestino Lopez Fuente</td>
+                        <td>Cieneguilla</td>
+                        <td>2009/04/10</td>
+                        <td>59</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Fabiola Noa Vara Lucas</td>
+                        <td>Comas</td>
+                        <td>2012/10/13</td>
+                        <td>41</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Renata Hierro Infante</td>
+                        <td>El Agustino</td>
+                        <td>2012/09/26</td>
+                        <td>35</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIO TECNICO DE COMPUTADORAS Y LAPTOP’S</td>
+                        <td>Sonia Almazan Aroca</td>
+                        <td>Independencia</td>
+                        <td>2011/09/03</td>
+                        <td>30</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Rosa Valbuena Manso</td>
+                        <td>Jesus María</td>
+                        <td>2009/06/25</td>
+                        <td>40</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Adriana Ferrero Alcazar</td>
+                        <td>La Molina</td>
+                        <td>2011/12/12</td>
+                        <td>21</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Angel Bruno Rios Ayala</td>
+                        <td>La Molina</td>
+                        <td>2010/09/20</td>
+                        <td>23</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Federico Nico Rivas Nogueira</td>
+                        <td>La Victoria</td>
+                        <td>2009/10/09</td>
+                        <td>47</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Luis Montesinos Carrasco</td>
+                        <td>Lima</td>
+                        <td>2010/12/22</td>
+                        <td>42</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Gisela Sandoval Contreras</td>
+                        <td>Lince</td>
+                        <td>2010/11/14</td>
+                        <td>28</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Lourdes Cespedes Polo</td>
+                        <td>Lurigancho</td>
+                        <td>2011/06/07</td>
+                        <td>28</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Estrella Hurtado Gimeno</td>
+                        <td>Lurin</td>
+                        <td>2010/03/11</td>
+                        <td>48</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Tecla Alba Chaves</td>
+                        <td>Magdalena del Mar</td>
+                        <td>2011/08/14</td>
+                        <td>20</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Reyna Tudela Sanchez</td>
+                        <td>Miraflores</td>
+                        <td>2011/06/02</td>
+                        <td>37</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Victoria Rius Corbacho</td>
+                        <td>Pachacamac</td>
+                        <td>2009/10/22</td>
+                        <td>53</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Paula Rocamora Benito</td>
+                        <td>Pucusana</td>
+                        <td>2011/05/07</td>
+                        <td>27</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Amada Alba Barcena Barreda</td>
+                        <td>Pueblo Libre</td>
+                        <td>2008/10/26</td>
+                        <td>22</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Jose Ramon Tejera Vicens</td>
+                        <td>Punta Hermosa</td>
+                        <td>2011/03/09</td>
+                        <td>46</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Yago Méndez Vila</td>
+                        <td>Punta Negra</td>
+                        <td>2009/12/09</td>
+                        <td>47</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Cornelio Moliner Reyes</td>
+                        <td>Rimac</td>
+                        <td>2008/12/16</td>
+                        <td>51</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Nicolasa Marcos Pujadas</td>
+                        <td>San Bartolo</td>
+                        <td>2010/02/12</td>
+                        <td>41</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</td>
+                        <td>Adelardo Belmonte Mateos</td>
+                        <td>San Borja</td>
+                        <td>2009/02/14</td>
+                        <td>62</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Azahar Mosquera Chico</td>
+                        <td>San Isidro</td>
+                        <td>2008/12/11</td>
+                        <td>37</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Damián Batlle Medina</td>
+                        <td>San Juan de Lurigancho</td>
+                        <td>2008/09/26</td>
+                        <td>65</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Olegario Guardia Iriarte</td>
+                        <td>San Juan de Miraflores</td>
+                        <td>2011/02/03</td>
+                        <td>64</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Gracia Estrada Rubio</td>
+                        <td>San Luis</td>
+                        <td>2011/05/03</td>
+                        <td>38</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Viviana Bolaños Llorente</td>
+                        <td>San Martín de Porres</td>
+                        <td>2009/08/19</td>
+                        <td>37</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Candido Jimenez Pallares</td>
+                        <td>San Miguel</td>
+                        <td>2013/08/11</td>
+                        <td>61</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Javier Robles Tejada</td>
+                        <td>Santa Anita</td>
+                        <td>2009/07/07</td>
+                        <td>47</td>
+                        
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>EXPERTO EN PRODUCTOS APPLE</td>
+                        <td>Jose Antonio Valle Garcia</td>
+                        <td>Santa María del Mar</td>
+                        <td>2012/04/09</td>
+                        <td>64</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Clemente Bravo Vega</td>
+                        <td>Santa Rosa</td>
+                        <td>2010/01/04</td>
+                        <td>63</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Fabio Guerra Puga</td>
+                        <td>Santiago de Surco</td>
+                        <td>2012/06/01</td>
+                        <td>56</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Roxana Medina Puig</td>
+                        <td>Surquillo</td>
+                        <td>2013/02/01</td>
+                        <td>43</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Custodia Azorin Mir</td>
+                        <td>Villa El Salvador</td>
+                        <td>2011/12/06</td>
+                        <td>46</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REPARACION DE PERIFERICOS</td>
+                        <td>Angelica Maza Hidalgo</td>
+                        <td>Villa Maria del Triunfo</td>
+                        <td>2011/03/21</td>
+                        <td>47</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Patricia Agullo Navarrete</td>
+                        <td>La Molina</td>
+                        <td>2009/02/27</td>
+                        <td>21</td>
+                        
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Jovita Torralba Valentin</td>
+                        <td>Lince</td>
+                        <td>2010/07/14</td>
+                        <td>30</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Eloy Calderon Figueroa</td>
+                        <td>Lince</td>
+                        <td>2008/11/13</td>
+                        <td>51</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>LIMPIEZA DE VIRUS INFORMATICOS</td>
+                        <td>Carolina Marmol Patiño</td>
+                        <td>Chorrillos</td>
+                        <td>2011/06/27</td>
+                        <td>29</td>
+                        
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>REDES Y SERVIDORES</td>
+                        <td>Bernardino Busquets Abril</td>
+                        <td>Ate Vitarte</td>
+                        <td>2011/01/25</td>
+                        <td>27</td>
+                        
+                        <td>5</td>
+                    </tr>
+                </tbody>               
+ </table>  
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script> 
+
+<script>
+let temp = $("#btn1").clone();
+$("#btn1").click(function(){
+    $("#btn1").after(temp);
+});
+
+$(document).ready(function(){
+    var table = $('#example').DataTable({
+       orderCellsTop: true,
+       fixedHeader: true 
+    });
+
+    
+    $('#example thead tr').clone(true).appendTo( '#example thead' );
+
+    $('#example thead tr:eq(1) th').each( function (i) {
+        var title = $(this).text(); 
+        $(this).html( '<input type="text" placeholder="Search...'+title+'" />' );
+ 
+        $( 'input', this ).on( 'keyup change', function () {
+            if ( table.column(i).search() !== this.value ) {
+                table
+                    .column(i)
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );   
+});
+
+
+ 
+
+</script>
+
+
+</body>
+</html>
